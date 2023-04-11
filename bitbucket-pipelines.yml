@@ -6,6 +6,6 @@ pipelines:
           runs-on: 
             - 'self.hosted'
             - 'linux.shell'
-            - 'customlabel'
+            - 'linux1'
           script:
             - echo 'This step will run on a self-hosted Linux Shell runner.';
