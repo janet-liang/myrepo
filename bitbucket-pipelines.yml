@@ -1,0 +1,11 @@
+pipelines:
+  custom:
+    customPipelineWithRunnerStep:
+      - step:
+          name: Step 1
+          runs-on: 
+            - 'self.hosted'
+            - 'linux.shell'
+            - 'customlabel'
+          script:
+            - echo 'This step will run on a self-hosted Linux Shell runner.';
